@@ -1,0 +1,47 @@
+.Checkout .Conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.EscolhaDeAssentos {
+  width: 100%;
+}
+
+.Assentos-Cinema {
+  background-color: #323438;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+}
+.Assentos-Cinema-Fileira {
+  width: 100%;
+  display: flex;
+}
+.Assentos-Cinema-Fileira-Seat {
+  background-color: yellow;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+}
+
+.CheckoutProcess-Etapas {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+.CheckoutProcess-Etapas-Etapa {
+  background-color: blueviolet;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CheckoutProcess-Etapas-Linha {
+  height: 1px;
+  width: 20px;
+  background-color: darkgrey;
+}

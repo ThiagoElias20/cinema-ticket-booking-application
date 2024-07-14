@@ -1,6 +1,6 @@
 export function Conteudo({ children }) {
   return (
-    <div style={{ margin: '50px 5vw', width: 'fit-content' }}>
+    <div className="Conteudo" style={{ margin: '50px 5vw'}}>
       {children}
     </div>
   )
