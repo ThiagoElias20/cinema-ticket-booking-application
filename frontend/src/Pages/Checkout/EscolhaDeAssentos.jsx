@@ -1,41 +1,20 @@
+import { useState } from 'react';
+import { CinemaSeat, FileiraCinema } from './FileiraCinema';
 import './styles.css';
 
 export function EscolhaDeAssentos() {
+
+  const letters = ["A", "B", "C", "D", "E"];
+
   return(
     <div className="EscolhaDeAssentos">
         <div className="Assentos-Cinema">
-          <div className="Assentos-Cinema-Fileira">
-            <div className="Assentos-Cinema-Fileira-Letra">D</div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-          </div>
-          <div className="Assentos-Cinema-Fileira">
-            <div className="Assentos-Cinema-Fileira-Letra">C</div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-          </div>
-          <div className="Assentos-Cinema-Fileira">
-            <div className="Assentos-Cinema-Fileira-Letra">B</div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-          </div>
-          <div className="Assentos-Cinema-Fileira">
-            <div className="Assentos-Cinema-Fileira-Letra">A</div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-            <div className="Assentos-Cinema-Fileira-Seat"></div>
-          </div>
+          {letters.map((letter, index) => 
+              <FileiraCinema
+              key={index}
+              FileiraLetra={letter}
+              />
+          )}
         </div>
       </div>
   )

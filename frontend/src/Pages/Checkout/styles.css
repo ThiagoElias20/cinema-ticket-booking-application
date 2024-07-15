@@ -13,17 +13,22 @@
   background-color: #323438;
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  /* height: 60vh; */
 }
 .Assentos-Cinema-Fileira {
-  width: 100%;
   display: flex;
+  align-items: center;
+  margin: 10px 0;
 }
 .Assentos-Cinema-Fileira-Seat {
-  background-color: yellow;
+  background-color: #8a65e0;
+  cursor: pointer;
   border-radius: 50px;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .CheckoutProcess-Etapas {
@@ -32,7 +37,7 @@
   width: 200px;
 }
 .CheckoutProcess-Etapas-Etapa {
-  background-color: blueviolet;
+  background-color: #5324C0;
   height: 40px;
   width: 40px;
   border-radius: 50px;
