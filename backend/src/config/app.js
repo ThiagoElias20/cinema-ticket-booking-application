@@ -8,11 +8,11 @@ app.use(express(), movieRoutes);
 const db = await connection();
 
 db.on('error', () => {
-    console.log("Erro ao conectar com o banco de dados!");
+    console.log("Erro ao conectar com o MongoDb!");
 });
 
 db.once("open", () => {
-    console.log("Sucesso! Conectado ao banco de dados.")
+    console.log("Sucesso! Conectado ao MongoDb.")
 })
 
 

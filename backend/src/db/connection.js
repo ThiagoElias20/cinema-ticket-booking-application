@@ -1,6 +1,6 @@
 import mongoose, { mongo } from "mongoose";
 
-const DB_CONNECTION_LINK = process.env.DB_CONNECTION_LINK;
+const DB_CONNECTION_LINK = process.env.MONGODB_CONNECTION_LINK;
 
 const connection = async () => {
     mongoose.connect(DB_CONNECTION_LINK);
