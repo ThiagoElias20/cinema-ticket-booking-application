@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 
 export function FileiraCinema(props) {
-  const [isAssentoClicado, setAssentoClicado] = useState(false);
+  const [assentosClicados, setAssentosClicados] = useState({});
 
-  function clicandoAssento() {
-    setAssentoClicado(true);
+  function clicandoAssento(id) {
+    setAssentosClicados(prevState => ({
+      ...prevState,
+      [id]: !prevState[id]
+    }));
   }
 
   const numbers = [1, 2, 3, 4, 5];
@@ -16,8 +19,9 @@ export function FileiraCinema(props) {
         <CinemaSeat
         key={index}
         FileiraNum={props.FileiraLetra + number}
-        clicandoAssento={clicandoAssento}
-        isAssentoClicado={isAssentoClicado}
+        clicandoAssento={() => clicandoAssento(number)}
+        isAssentoClicado={assentosClicados[number]}
+        id={number}
         />
        )}
         
@@ -27,7 +31,7 @@ export function FileiraCinema(props) {
 
 export function CinemaSeat(props) {
   return (
-    <div onClick={props.clicandoAssento} className="Assentos-Cinema-Fileira-Seat">
+    <div onClick={props.clicandoAssento} className="Assentos-Cinema-Fileira-Seat" id={props.id}>
       {props.isAssentoClicado ? (
         <span className="Seat-Text">{props.FileiraNum}</span>
       ) : (

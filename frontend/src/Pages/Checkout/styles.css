@@ -1,8 +1,11 @@
-.Checkout .Conteudo {
+.Checkout .Conteudo, #Checkout-assentos {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#Checkout-assentos {
+  height: 300px;
+  margin: 50px 5vw;
 }
 
 .EscolhaDeAssentos {
@@ -49,4 +52,10 @@
   height: 1px;
   width: 20px;
   background-color: darkgrey;
+}
+
+.ResumoPedido {
+  height: inherit;
+  width: 50vw;
+  background-color: #8a65e0;
 }
