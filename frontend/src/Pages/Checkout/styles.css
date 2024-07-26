@@ -56,6 +56,44 @@
 
 .ResumoPedido {
   height: inherit;
-  width: 50vw;
+  width: 15%;
   background-color: #8a65e0;
+  margin-left: 10px;
+  padding: 10px;
+}
+.ResumoPedido h3 {
+  margin-bottom: 10px;
+}
+.ResumoPedido-Filme {
+  display: flex;
+}
+.ResumoPedido-Filme .ResumoPedido-FilmeDetalhes p {
+  font-size: 0.8em;
+}
+.ResumoPedido-Filme .ResumoPedido-FilmeDetalhes {
+  margin-left: 7px;
+}
+.ResumoPedido-Filme h4 {
+  font-size: 0.9em;
+}
+.ResumoPedido-Dados .ResumoPedido-FilmeImg img {
+  height: 125px;
+}
+.sessaoEscolhida {
+  display: flex;
+  justify-content: space-between;
+}
+.sessaoEscolhida div {
+  display: flex;
+}
+.sessaoEscolhida div p {
+  margin: 0 2px;
+}
+.SeparaTotal {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.Resumo-Total div {
+  display: flex;
+  justify-content: space-between;
 }
