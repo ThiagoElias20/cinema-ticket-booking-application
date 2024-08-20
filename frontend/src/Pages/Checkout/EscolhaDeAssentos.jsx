@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import { CinemaSeat, FileiraCinema } from './FileiraCinema';
 import './styles.css';
+import testeassentos from './testeassentos.json';
 
 export function EscolhaDeAssentos() {
 
-  const letters = ["A", "B", "C", "D", "E"];
+  const fileiras = Object.values(testeassentos.SalaCinema1).map(fileira => fileira.LetraFileira);
 
   return(
     <div className="EscolhaDeAssentos">
         <div className="Assentos-Cinema">
-          {letters.map((letter, index) => 
+          {fileiras.map((letter, index) => 
               <FileiraCinema
               key={index}
               FileiraLetra={letter}
